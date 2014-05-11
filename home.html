@@ -6,7 +6,7 @@
 
     <h2>{{money.capital}}</h2>
 
-    <h4>{{expense}}</h4>
+    <h4>{{money.expense}}</h4>
 
     <form ng-submit="addExpense()">
 
@@ -15,6 +15,26 @@
     <button type="submit">Add Expense</button>
 
     </div>
+
+   
+
+    <h2>Keyboard</h2>
+
+    <ul class="button-group">
+      <li><a href="#" class="button" ng-click="addNumber($event)" data="1">1</a></li>
+      <li><a href="#" class="button" ng-click="addNumber($event)" data="2">2</a></li>
+      <li><a href="#" class="button" ng-click="addNumber($event)" data="3">3</a></li>
+    </ul>
+    <ul class="button-group">
+      <li><a href="#" class="button">4</a></li>
+      <li><a href="#" class="button">5</a></li>
+      <li><a href="#" class="button">6</a></li>
+    </ul>
+    <ul class="button-group">
+      <li><a href="#" class="button">7</a></li>
+      <li><a href="#" class="button">8</a></li>
+      <li><a href="#" class="button">9</a></li>
+    </ul>
 
   </div>
 </div>

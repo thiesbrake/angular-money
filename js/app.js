@@ -18,18 +18,25 @@ app.controller('HomeController', function($scope){
 			capital: 425,
 			expense: 0
 	};
+
+	$scope.addNumber = function(obj){
+		 var dataValue = obj.target.attributes.data.value;
+		 console.log(dataValue);
+		 
+		 $scope.money.expense += parseInt(dataValue);
+		 console.log($scope.money.expense);
+	};
+
 	
 	$scope.addExpense = function(){
 		 $scope.money = {
-			capital: $scope.money.capital - parseInt($scope.expense),
-			expense: $scope.money.expense + parseInt($scope.expense)
+			capital: $scope.money.capital - parseInt($scope.expense)
 		};
 
 		$scope.expense = "";
-
-		// Log the money object
-		console.log($scope.money);
 	};
+
+	
 
 });
 
